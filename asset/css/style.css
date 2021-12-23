@@ -42,14 +42,74 @@ table {
     border-spacing: 0;
 }
 
+h1 {
+    font-size: 2rem;
+}
 
+h2 {
+    font-size: 1.5rem;
+}
 
+h3 {
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+/* couleurs du cv */
+:root {
+    --cv-background: #fdc700;   
+    --white: #ffffff;
+    --black-text: #231f20;
+    --gray-text: #4d504d;
+    --line: #c03126;
+    --blue: #4580c2;
+    --transparent: rgba(255, 255, 255, 0);
+    --bold: 700;
+}
 /* couleur background extrait de illustrator #fef6e0 */
 
 /* perso */
+body {
+    margin: 5vh 13vw;
+    background-color: rgba(31, 3, 3, 0.342);
+    border: 2px solid;
+    -webkit-box-shadow: 0px 0px 3px 2px #525252; 
+    box-shadow: 0px 0px 3px 2px #525252;
+    
+}
 
 /* header */
+header {
+    background-color: violet;
+    height: 25vh;
+    
 
+   
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+   
+}
+header ul >li {
+    padding-top: 5vh ;
+}
+header ul > li p {
+    line-height: 17pt;
+}
+header ul li:nth-child(2) {
+    text-align: center;
+    padding-top: 10vh;
+}
+header ul li:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    line-height: 15pt;
+    background-color: var(--blue);
+}
 /* introduce */
 
 /* experience */
