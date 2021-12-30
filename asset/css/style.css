@@ -44,6 +44,8 @@ table {
 
 h1 {
     font-size: 2rem;
+    font-family: lato;
+    font-weight: var(--bold);
 }
 
 h2 {
@@ -58,58 +60,150 @@ a {
     text-decoration: none;
     color: var(--white);
 }
+
 /* couleurs du cv */
 :root {
-    --cv-background: #fdc700;   
+    --cv-background: #fdf8e2;
     --white: #ffffff;
     --black-text: #231f20;
     --gray-text: #4d504d;
     --line: #c03126;
     --blue: #4580c2;
+    --outline-blue: #2e6596;
     --transparent: rgba(255, 255, 255, 0);
     --bold: 700;
 }
+
+/* font family */
+@font-face {
+    font-family: 'RetroGaming';
+    src: url('../font/Retro\ Gaming.ttf');
+}
+
+
 /* couleur background extrait de illustrator #fef6e0 */
 
 /* perso */
-body {
-    margin: 5vh 13vw;
-    background-color: rgba(31, 3, 3, 0.342);
+
+.wrap {
+    background-size: auto;
+    margin: 5vh 20vw;
+    background-color: var(--cv-background);
     border: 2px solid;
-    -webkit-box-shadow: 0px 0px 3px 2px #525252; 
+    -webkit-box-shadow: 0px 0px 3px 2px #525252;
     box-shadow: 0px 0px 3px 2px #525252;
-    
 }
 
 /* header */
 header {
     background-color: violet;
-    height: 25vh;
     
 
-   
+
+
 }
+
 header ul {
     display: flex;
     justify-content: space-between;
-   
+    height: fit-content;
+
+
+
 }
-header ul >li {
-    padding-top: 5vh ;
+
+header ul>li {
+    padding-top: 5vh;
+    height: 100%;
+
+
 }
-header ul > li p {
+
+header ul>li p {
     line-height: 17pt;
 }
+
 header ul li:nth-child(2) {
+    height: 158px;
+    margin: 0 0 auto 8%;
     text-align: center;
-    padding-top: 10vh;
+    padding-top: 0vh;
+    line-height: 7pc;
+    align-items: center;
 }
-header ul li:nth-child(3){
+
+header ul li:nth-child(2) p {
+    display: block;
+    height: 100px;
+    width: 300px;
+   padding: 6px 0 0 1px;
+   letter-spacing: 2px;
+    background: url(../img/game_designer.svg) ;
+    
+    font-family: 'RetroGaming', monospace;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+
+   
+}
+/* header ul li:nth-child(2) p::after {
+    content: '';
+    position: absolute;
+    top: 176px;
+    
+    right: 560px;
+    
+    background-color: var(--cv-background);
+    width: 250px;
+    height: 27px;
+    z-index: 0;
+  
+} */
+
+header ul li:nth-child(3) {
+    padding-top: 0;
+    width: 160px;
+    height: 64px;
+    margin: 20px 50px 50px 0;
     display: flex;
+    text-align: center;
     flex-direction: column;
-    line-height: 15pt;
     background-color: var(--blue);
+    /* justify-content: space-evenly; */
+    line-height: 1.5pc;
+    border-top: 8px solid #5794cf;
+    -webkit-box-shadow: 8px 0px 0px 0px #2e6596, 0px 8px 0px 0px #2e6596;
+
+    -moz-box-shadow: 8px 0px 0px 0px #2e6596, 0px 8px 0px 0px #2e6596;
+    box-shadow: 8px 0px 0px 0px #2e6596, 0px 8px 0px 0px #2e6596;
+
 }
+
+header ul li:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    left: 1029px;
+    top: 116px;
+    width: 28px;
+    min-height: 28px;
+    background-color: var(--blue);
+    -webkit-box-shadow: inset -8px -8px 0px 0px var(--outline-blue);
+    -moz-box-shadow: inset -8px -8px 0px 0px var(--outline-blue);
+    box-shadow: inset -8px -8px 0px 0px var(--outline-blue);
+}
+
+/* header ul li:nth-child(3)::after {
+
+} */
+/* body resume */
+.wrap-global {
+    width: 100%;
+    height: fit-content;
+    
+}
+
 /* introduce */
 
 /* experience */
