@@ -44,8 +44,6 @@ table {
 
 h1 {
     font-size: 2rem;
-    font-family: lato;
-    font-weight: var(--bold);
 }
 
 h2 {
@@ -77,14 +75,51 @@ a {
 /* font family */
 @font-face {
     font-family: 'RetroGaming';
-    src: url('../font/Retro\ Gaming.ttf');
+    src: url('../font/Retro\ Gaming.ttf') format('truetype');
 }
-
-
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-Thin.ttf') format('truetype');
+    font-weight: 100;
+}
 /* couleur background extrait de illustrator #fef6e0 */
 
 /* perso */
-
+body {
+    height: 100vh;
+    background-image: linear-gradient(to left top, #fdf8e2, #f7ddb0, #f8be84, #fb9b63, #ff7152, #ff6261, #ff5472, #ff4884, #fb67a3, #f381bd, #ea99d1, #e2afde);
+}
 .wrap {
     background-size: auto;
     margin: 5vh 20vw;
@@ -93,14 +128,17 @@ a {
     -webkit-box-shadow: 0px 0px 3px 2px #525252;
     box-shadow: 0px 0px 3px 2px #525252;
 }
-
+.wrap h1 {
+    font-family: 'Montserrat' , lato, sans-serif ;
+    text-transform: uppercase;
+    font-weight: var(--bold);
+    letter-spacing: 2px;
+    padding: 0 0 0 4px;
+    
+}
 /* header */
 header {
-    background-color: violet;
-    
-
-
-
+    background-color: var(--white)
 }
 
 header ul {
@@ -115,17 +153,21 @@ header ul {
 header ul>li {
     padding-top: 5vh;
     height: 100%;
-
-
+    margin-left: 10px;
+    
 }
 
 header ul>li p {
-    line-height: 17pt;
-}
+    font-family: 'Montserrat' , lato, sans-serif ;
+    line-height: 11pt;
 
+}
+header ul>li p:nth-child(3) {
+    margin: 5px 0 ;
+}
 header ul li:nth-child(2) {
     height: 158px;
-    margin: 0 0 auto 8%;
+    margin: 0 0 auto 0%;
     text-align: center;
     padding-top: 0vh;
     line-height: 7pc;
@@ -163,28 +205,33 @@ header ul li:nth-child(2) p {
 } */
 
 header ul li:nth-child(3) {
-    padding-top: 0;
-    width: 160px;
-    height: 64px;
-    margin: 20px 50px 50px 0;
     display: flex;
     text-align: center;
     flex-direction: column;
+    padding-top: 0;
+    width: 160px;
+    height: 64px;
+    margin: 20px 36px 50px 0;
     background-color: var(--blue);
     /* justify-content: space-evenly; */
     line-height: 1.5pc;
     border-top: 8px solid #5794cf;
     -webkit-box-shadow: 8px 0px 0px 0px #2e6596, 0px 8px 0px 0px #2e6596;
-
+    
     -moz-box-shadow: 8px 0px 0px 0px #2e6596, 0px 8px 0px 0px #2e6596;
     box-shadow: 8px 0px 0px 0px #2e6596, 0px 8px 0px 0px #2e6596;
-
+    
 }
-
+header ul li:nth-child(3) a {
+    font-family: 'RetroGaming', monospace;
+    font-weight: 500;
+    font-size: 10px;
+    
+}
 header ul li:nth-child(3)::before {
     content: '';
     position: absolute;
-    left: 1029px;
+    left: 1026px;
     top: 116px;
     width: 28px;
     min-height: 28px;
@@ -194,9 +241,19 @@ header ul li:nth-child(3)::before {
     box-shadow: inset -8px -8px 0px 0px var(--outline-blue);
 }
 
-/* header ul li:nth-child(3)::after {
+header ul li:nth-child(3)::after {
+    content: '';
+    position: absolute;
+    left: 1040px;
+    top: 133px;
+    width: 18px;
+    min-height: 18px;
+    background-color: var(--blue);
+    -webkit-box-shadow: inset -4px -5px 0px 0px var(--outline-blue);
+    -moz-box-shadow: inset -4px -5px 0px 0px var(--outline-blue);
+    box-shadow: inset -4px -5px 0px 0px var(--outline-blue);
 
-} */
+}
 /* body resume */
 .wrap-global {
     width: 100%;
@@ -205,6 +262,7 @@ header ul li:nth-child(3)::before {
 }
 
 /* introduce */
+
 
 /* experience */
 
