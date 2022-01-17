@@ -263,7 +263,35 @@ header ul li:nth-child(3)::after {
 
 /* introduce */
 
-
+.wrap-global .intro{
+    background-color: var(--blue);
+    height: 150px;
+    width: 150mm;
+    margin: 50px 0 0 50px;
+    padding: 10px 10px 10px 10px;
+}
+.wrap-global .intro div {
+    display: flex;
+}
+.wrap-global .intro p {
+    display: contents;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--white);
+    white-space: pre-line;
+}
+.wrap-global img[src="asset/img/Profile-square-min.png"] {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+/* .wrap-global .intro, .wrap-global img[src="asset/img/Profile-min.jpg"] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+} */
 /* experience */
 
 /* profil */
