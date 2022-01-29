@@ -77,42 +77,50 @@ a {
     font-family: 'RetroGaming';
     src: url('../font/Retro\ Gaming.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'Montserrat';
     src: url('../font/Montserrat-Bold.ttf') format('truetype');
     font-weight: 700;
 }
+
 @font-face {
     font-family: 'Montserrat';
     src: url('../font/Montserrat-SemiBold.ttf') format('truetype');
     font-weight: 600;
 }
+
 @font-face {
     font-family: 'Montserrat';
     src: url('../font/Montserrat-Medium.ttf') format('truetype');
     font-weight: 500;
 }
+
 @font-face {
     font-family: 'Montserrat';
     src: url('../font/Montserrat-Light.ttf') format('truetype');
     font-weight: 300;
 }
+
 @font-face {
     font-family: 'Montserrat';
     src: url('../font/Montserrat-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
+
 @font-face {
     font-family: 'Montserrat';
     src: url('../font/Montserrat-ExtraLight.ttf') format('truetype');
     font-weight: 200;
 }
+
 @font-face {
     font-family: 'Montserrat';
     src: url('../font/Montserrat-Thin.ttf') format('truetype');
     font-weight: 100;
 }
+
 /* couleur background extrait de illustrator #fef6e0 */
 
 /* perso */
@@ -120,6 +128,7 @@ body {
     height: 100vh;
     background-image: linear-gradient(to left top, #fdf8e2, #f7ddb0, #f8be84, #fb9b63, #ff7152, #ff6261, #ff5472, #ff4884, #fb67a3, #f381bd, #ea99d1, #e2afde);
 }
+
 .wrap {
     background-size: auto;
     margin: 5vh 20vw;
@@ -128,14 +137,16 @@ body {
     -webkit-box-shadow: 0px 0px 3px 2px #525252;
     box-shadow: 0px 0px 3px 2px #525252;
 }
+
 .wrap h1 {
-    font-family: 'Montserrat' , lato, sans-serif ;
+    font-family: 'Montserrat', lato, sans-serif;
     text-transform: uppercase;
     font-weight: var(--bold);
     letter-spacing: 2px;
     padding: 0 0 0 4px;
-    
+
 }
+
 /* header */
 header {
     background-color: var(--white)
@@ -154,17 +165,19 @@ header ul>li {
     padding-top: 5vh;
     height: 100%;
     margin-left: 10px;
-    
+
 }
 
 header ul>li p {
-    font-family: 'Montserrat' , lato, sans-serif ;
+    font-family: 'Montserrat', lato, sans-serif;
     line-height: 11pt;
 
 }
+
 header ul>li p:nth-child(3) {
-    margin: 5px 0 ;
+    margin: 5px 0;
 }
+
 header ul li:nth-child(2) {
     height: 158px;
     margin: 0 0 auto 0%;
@@ -178,18 +191,19 @@ header ul li:nth-child(2) p {
     display: block;
     height: 100px;
     width: 300px;
-   padding: 6px 0 0 1px;
-   letter-spacing: 2px;
-    background: url(../img/game_designer.svg) ;
-    
+    padding: 12px 0 0 1px;
+    letter-spacing: 2px;
+    background: url(../img/game_designer.svg);
+
     font-family: 'RetroGaming', monospace;
     font-weight: 600;
 
     text-transform: uppercase;
     background-repeat: no-repeat;
 
-   
+
 }
+
 /* header ul li:nth-child(2) p::after {
     content: '';
     position: absolute;
@@ -206,6 +220,7 @@ header ul li:nth-child(2) p {
 
 header ul li:nth-child(3) {
     display: flex;
+    position: relative;
     text-align: center;
     flex-direction: column;
     padding-top: 0;
@@ -217,22 +232,24 @@ header ul li:nth-child(3) {
     line-height: 1.5pc;
     border-top: 8px solid #5794cf;
     -webkit-box-shadow: 8px 0px 0px 0px #2e6596, 0px 8px 0px 0px #2e6596;
-    
+
     -moz-box-shadow: 8px 0px 0px 0px #2e6596, 0px 8px 0px 0px #2e6596;
     box-shadow: 8px 0px 0px 0px #2e6596, 0px 8px 0px 0px #2e6596;
-    
+
 }
+
 header ul li:nth-child(3) a {
     font-family: 'RetroGaming', monospace;
     font-weight: 500;
     font-size: 10px;
-    
+
 }
+
 header ul li:nth-child(3)::before {
     content: '';
     position: absolute;
-    left: 1026px;
-    top: 116px;
+    left: 148px;
+    top: 54px;
     width: 28px;
     min-height: 28px;
     background-color: var(--blue);
@@ -244,54 +261,94 @@ header ul li:nth-child(3)::before {
 header ul li:nth-child(3)::after {
     content: '';
     position: absolute;
-    left: 1040px;
-    top: 133px;
-    width: 18px;
-    min-height: 18px;
+    left: 167px;
+    top: 77px;
+    width: 14px;
+    min-height: 14px;
     background-color: var(--blue);
-    -webkit-box-shadow: inset -4px -5px 0px 0px var(--outline-blue);
-    -moz-box-shadow: inset -4px -5px 0px 0px var(--outline-blue);
-    box-shadow: inset -4px -5px 0px 0px var(--outline-blue);
+    -webkit-box-shadow: inset -3px -3px 0px 0px var(--outline-blue);
+    -moz-box-shadow: inset -3px -3px 0px 0px var(--outline-blue);
+    box-shadow: inset -3px -3px 0px 0px var(--outline-blue);
 
 }
+
 /* body resume */
 .wrap-global {
     width: 100%;
     height: fit-content;
-    
+
 }
 
 /* introduce */
-
-.wrap-global .intro{
-    background-color: var(--blue);
-    height: 150px;
-    width: 150mm;
-    margin: 50px 0 0 50px;
-    padding: 10px 10px 10px 10px;
-}
-.wrap-global .intro div {
+.global-intro {
+    width: 100%;
+    height: fit-content;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+.wrap-global .intro {
+    display: flex;
+    background-color: var(--blue);
+    height: 26vh;
+    width: 66%;
+    margin: 50px 0 0 50px;
+    padding: 10px 10px 10px 33px;
+    /* left, bottom, corner */
+    -webkit-box-shadow: -6px 0px 0px 0px rgba(46, 101, 150, 1), 0px 6px 0px 0px rgba(46, 101, 150, 1), -6px 6px 0px 0px rgba(46, 101, 150, 1);
+    -moz-box-shadow: -6px 0px 0px 0px rgba(46, 101, 150, 1), 0px 6px 0px 0px rgba(46, 101, 150, 1), -6px 6px 0px 0px rgba(46, 101, 150, 1);
+    box-shadow: -6px 0px 0px 0px rgba(46, 101, 150, 1), 0px 6px 0px 0px rgba(46, 101, 150, 1), -6px 6px 0px 0px rgba(46, 101, 150, 1);
+    position: relative;
+}
+
+.wrap-global .intro::before {
+    content: '';
+    width: 9%;
+    height: 100%;
+    background-image: url('../img/cv_hero_designer.svg');
+    background-position: 50%;
+    background-size: 100% 110%;
+    position: absolute;
+    top: 48px;
+    left: -30px;
+    background-repeat: no-repeat;
+}
+.wrap-global .intro::after{
+    content: '';
+    width: 15%;
+    height: 25%;
+    background-image: url('../img/cv_purple_diamond.svg');
+    background-position: 50%;
+    background-size: 100% 100%;
+    position: absolute;
+    top: -15px;
+    right: -40px;
+    background-repeat: no-repeat;
+}
+/* .wrap .intro div {
+
+} */
 .wrap-global .intro p {
     display: contents;
     font-family: 'Montserrat';
     font-weight: 300;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 20px;
     color: var(--white);
+    /* retour chariot sans utiliser br */
     white-space: pre-line;
 }
+
 .wrap-global img[src="asset/img/Profile-square-min.png"] {
-    height: 200px;
-    width: 200px;
+    height: 130px;
+    width: 130px;
+    opacity: 0.7;
     border-radius: 50%;
+    margin-top: 20%;
 }
-/* .wrap-global .intro, .wrap-global img[src="asset/img/Profile-min.jpg"] {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-} */
+
+
 /* experience */
 
 /* profil */
