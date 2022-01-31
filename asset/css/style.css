@@ -195,7 +195,7 @@ header ul li:nth-child(2) p {
     letter-spacing: 2px;
     background: url(../img/game_designer.svg);
 
-    font-family: 'RetroGaming', monospace;
+    font-family: 'RetroGaming',lato,monospace;
     font-weight: 600;
 
     text-transform: uppercase;
@@ -239,7 +239,7 @@ header ul li:nth-child(3) {
 }
 
 header ul li:nth-child(3) a {
-    font-family: 'RetroGaming', monospace;
+    font-family: 'RetroGaming',lato,sans-serif;
     font-weight: 500;
     font-size: 10px;
 
@@ -353,27 +353,73 @@ header ul li:nth-child(3)::after {
 
 /* experience */
 .experience {
-    margin-top: 20px;
+    margin-top: 50px;
     width: 100%;
     height: 450px;
     background-image: url(../img/wave.png);
     background-repeat: no-repeat;
     background-size: 1000px;
     display: flex;
+    font-family: 'Montserrat';
 
+}
+.experience .line-right {
+    position: absolute;
+    
+    height: 85%;
+    top: 0px;
+    right: 0;
+    
+    border-right: #bf3227 2px solid;
 }
 
 .experience .quality {
+    
     width: 25%;
     height: 100%;
     background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4%;
+    position: relative;
 }
+.experience  img:not([alt="logo d'esprit d'équipe"]) {
+    max-width: 30%;
+}
+.experience .quality img ~ p {
+    font-family: 'RetroGaming',lato,sans-serif;
+    
 
+}
+.experience .quality img[alt^="logo d'esprit d'équipe"] {
+    max-width: 66%;
+}
+img[alt="logo d'esprit d'équipe"] + p {
+    margin-top: -20px;
+}
 .experience .jobs {
-    width: 33%;
+    width: 35%;
     height: 100%;
     background-color: rosybrown;
+    position: relative;
+    text-align: center;
 }
+.experience .jobs div {
+    text-align: initial;
+}
+
+.experience .jobs div span {
+    font-family: 'RetroGaming',lato,sans-serif;
+    
+    
+}
+/* TODO:  */
+/* .experience .jobs div span:nth-child(odd){
+
+} */
+
+
 
 .experience .licence {
     width: 40%;
@@ -386,3 +432,5 @@ header ul li:nth-child(3)::after {
 
 
 /* profil */
+
+
