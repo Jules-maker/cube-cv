@@ -65,7 +65,9 @@ a {
     --white: #ffffff;
     --black-text: #231f20;
     --gray-text: #4d504d;
-    --line: #c03126;
+    --line: #bf3227;
+    --red: #E56748;
+    --red-background: #913E28;
     --blue: #4580c2;
     --outline-blue: #2e6596;
     --transparent: rgba(255, 255, 255, 0);
@@ -195,7 +197,7 @@ header ul li:nth-child(2) p {
     letter-spacing: 2px;
     background: url(../img/game_designer.svg);
 
-    font-family: 'RetroGaming', monospace;
+    font-family: 'RetroGaming', lato, monospace;
     font-weight: 600;
 
     text-transform: uppercase;
@@ -239,7 +241,7 @@ header ul li:nth-child(3) {
 }
 
 header ul li:nth-child(3) a {
-    font-family: 'RetroGaming', monospace;
+    font-family: 'RetroGaming', lato, sans-serif;
     font-weight: 500;
     font-size: 10px;
 
@@ -314,7 +316,8 @@ header ul li:nth-child(3)::after {
     left: -30px;
     background-repeat: no-repeat;
 }
-.wrap-global .intro::after{
+
+.wrap-global .intro::after {
     content: '';
     width: 15%;
     height: 25%;
@@ -326,6 +329,7 @@ header ul li:nth-child(3)::after {
     right: -40px;
     background-repeat: no-repeat;
 }
+
 /* .wrap .intro div {
 
 } */
@@ -349,6 +353,135 @@ header ul li:nth-child(3)::after {
 }
 
 
-/* experience */
+/*/////////////   Experience  ////////////////*/
+.experience {
+    margin-top: 50px;
+    width: 100%;
+    height: 550px;
+    background-image: url(../img/wave.png);
+    background-repeat: no-repeat;
+    background-size: 175% 100%;
+    display: flex;
+    font-family: 'Montserrat';
+
+}
+
+.experience .line-right {
+    position: absolute;
+    height: 85%;
+    top: 0px;
+    right: 0;
+    border-right: var(--line) 2px solid;
+}
+
+.experience .quality {
+
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4%;
+    position: relative;
+}
+
+.experience img:not([alt="logo d'esprit d'équipe"]) {
+    max-width: 30%;
+    /* TODO: verifier si il faut mettre à 4 */
+    margin-top: 3%;
+}
+.experience img[alt$="couronne"]{
+    min-width: 40%;
+}
+.experience .quality img~p {
+    font-family: 'RetroGaming', lato, sans-serif;
+
+
+}
+
+.experience .quality img[alt="logo d'esprit d'équipe"] {
+    max-width: 66%;
+}
+
+img[alt="logo d'esprit d'équipe"] + p {
+    margin-top: -20px;
+}
+
+.experience .jobs {
+    width: 35%;
+    height: 100%;
+    padding-left: 1%;
+    position: relative;
+    text-align: center;
+}
+
+.experience .jobs div {
+    text-align: initial;
+
+}
+
+.experience .jobs div::first-letter {
+    font-family: 'RetroGaming';
+    color: var(--red-background);
+    font-size: 6em;
+    display: float;
+    margin: 0px 0px 0px 0px;
+    float: left;
+    z-index: 10;
+    /* #913E28 */
+
+
+}
+
+.experience .jobs div:last-child {
+    margin-top: 5%;
+    position: relative;
+}
+
+.experience .jobs div:last-child::before {
+    content: '1';
+    position: absolute;
+    top: -5px;
+    left: 2px;
+    font-family: 'RetroGaming';
+    color: var(--red);
+    font-size: 6em;
+    z-index: 9;
+}
+
+.experience .jobs div span {
+    font-family: 'RetroGaming', lato, sans-serif;
+
+
+}
+
+.experience .jobs div p:nth-child(even) {
+    font-size: 'Montserrat';
+    font-weight: 700;
+}
+
+
+
+.experience .licence {
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}
+.experience .licence img {
+    margin-top: 5%;
+}
+.experience .licence div {
+    margin: 5% 0 10% 2%;
+    text-align: initial;
+    line-height: 120%;
+}
+
+.experience .licence div:nth-child(2){
+    margin-top: 10%;
+    
+}
+.experience .licence div p:nth-child(odd){
+    font-weight: 600;
+}
 
 /* profil */
