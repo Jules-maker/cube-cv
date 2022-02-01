@@ -65,7 +65,9 @@ a {
     --white: #ffffff;
     --black-text: #231f20;
     --gray-text: #4d504d;
-    --line: #c03126;
+    --line: #bf3227;
+    --red: #E56748;
+    --red-background:#913E28;
     --blue: #4580c2;
     --outline-blue: #2e6596;
     --transparent: rgba(255, 255, 255, 0);
@@ -358,7 +360,7 @@ header ul li:nth-child(3)::after {
     height: 450px;
     background-image: url(../img/wave.png);
     background-repeat: no-repeat;
-    background-size: 1000px;
+    background-size: 145%;
     display: flex;
     font-family: 'Montserrat';
 
@@ -370,7 +372,7 @@ header ul li:nth-child(3)::after {
     top: 0px;
     right: 0;
     
-    border-right: #bf3227 2px solid;
+    border-right: var(--line) 2px solid;
 }
 
 .experience .quality {
@@ -386,6 +388,8 @@ header ul li:nth-child(3)::after {
 }
 .experience  img:not([alt="logo d'esprit d'équipe"]) {
     max-width: 30%;
+    /* TODO: verifier si il faut mettre à 4 */
+    margin-top: 3%;
 }
 .experience .quality img ~ p {
     font-family: 'RetroGaming',lato,sans-serif;
@@ -401,23 +405,53 @@ img[alt="logo d'esprit d'équipe"] + p {
 .experience .jobs {
     width: 35%;
     height: 100%;
+    padding-left: 1%;
     background-color: rosybrown;
     position: relative;
     text-align: center;
 }
 .experience .jobs div {
     text-align: initial;
+    
 }
 
+.experience .jobs div::first-letter{
+    font-family: 'RetroGaming';
+    color: var(--red-background);
+    font-size: 6em;
+    display: float;
+    margin: 0px 0px 0px 0px;
+    float: left;
+    z-index: 10;
+    /* #913E28 */
+    
+
+}
+
+.experience .jobs div:last-child{
+    margin-top: 5%;
+    position: relative;
+}
+.experience .jobs div:last-child::before{
+    content: '1';
+    position: absolute;
+    top: -5px;
+    left: 2px;
+    font-family: 'RetroGaming';
+    color: var(--red);
+    font-size: 6em;
+    z-index: 9;
+}
 .experience .jobs div span {
     font-family: 'RetroGaming',lato,sans-serif;
     
     
 }
 /* TODO:  */
-/* .experience .jobs div span:nth-child(odd){
-
-} */
+.experience .jobs div p:nth-child(even){
+font-size: 'Montserrat';
+font-weight: 700;
+}
 
 
 
