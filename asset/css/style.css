@@ -46,9 +46,9 @@ h1 {
     font-size: 2rem;
 }
 
-h2 {
+/* h2 {
     font-size: 1.5rem;
-}
+} */
 
 h3 {
     font-size: 1.2rem;
@@ -127,7 +127,7 @@ a {
 
 /* perso */
 body {
-    height: 100vh;
+    height: 100%;
     background-image: linear-gradient(to left top, #fdf8e2, #f7ddb0, #f8be84, #fb9b63, #ff7152, #ff6261, #ff5472, #ff4884, #fb67a3, #f381bd, #ea99d1, #e2afde);
 }
 
@@ -368,7 +368,7 @@ header ul li:nth-child(3)::after {
 
 .experience .line-right {
     position: absolute;
-    height: 85%;
+    height: 60%;
     top: 0px;
     right: 0;
     border-right: var(--line) 2px solid;
@@ -390,9 +390,11 @@ header ul li:nth-child(3)::after {
     /* TODO: verifier si il faut mettre à 4 */
     margin-top: 3%;
 }
-.experience img[alt$="couronne"]{
+
+.experience img[alt$="couronne"] {
     min-width: 40%;
 }
+
 .experience .quality img~p {
     font-family: 'RetroGaming', lato, sans-serif;
 
@@ -403,7 +405,7 @@ header ul li:nth-child(3)::after {
     max-width: 66%;
 }
 
-img[alt="logo d'esprit d'équipe"] + p {
+img[alt="logo d'esprit d'équipe"]+p {
     margin-top: -20px;
 }
 
@@ -467,21 +469,129 @@ img[alt="logo d'esprit d'équipe"] + p {
     height: 100%;
     text-align: center;
 }
+
 .experience .licence img {
     margin-top: 5%;
 }
+
 .experience .licence div {
     margin: 5% 0 10% 2%;
     text-align: initial;
     line-height: 120%;
 }
 
-.experience .licence div:nth-child(2){
+.experience .licence div:nth-child(2) {
     margin-top: 10%;
-    
+
 }
-.experience .licence div p:nth-child(odd){
+
+.experience .licence div p:nth-child(odd) {
     font-weight: 600;
 }
 
 /* profil */
+footer {
+    width: 100%;
+    margin: 0 auto 5%;
+    display: flex;
+}
+
+footer h2 {
+    padding-top: 5%;
+    margin: 1%;
+    font-family: 'RetroGaming', lato, sans-serif;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: -0.1em;
+    font-size: 1em;
+    border-right: var(--line) 2px solid;
+
+}
+
+footer div.left {
+    width: 55%;
+    display: flex;
+    position: relative;
+}
+
+footer div.left ul {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    margin-left: 1%;
+}
+
+/* TODO: style svg */
+footer div.left ul.skill li {
+    font-family: 'RetroGaming', lato, sans-serif;
+    margin: 0% 10% 11% 10%;
+}
+
+footer div.left ul li {
+    margin-bottom: 10%;
+
+}
+
+footer div:last-child {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer div:last-child .hobbies {
+    display: flex;
+    width: 100%;
+
+}
+
+
+
+
+
+.grid-hobbies {
+    width: 100%;
+    margin:auto 10% auto 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2% 0;
+    align-items: center;
+
+}
+.grid-hobbies li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.grid-hobbies li img {
+    max-width: 28%;
+    display: block;
+    margin: 0 auto 6%;
+}
+.grid-hobbies li p {
+    font-family: 'Montserrat',lato,sans-serif;
+    font-weight: 300;
+}
+
+footer div:last-child .languages {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+
+}
+.grid-languages {
+    width: 60%;
+    margin:auto 10% auto 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+    align-items: center;
+    text-align: center;
+}
+
+footer div:last-child .languages .grid-languages img {
+    max-width: 25%;
+}
