@@ -8,13 +8,14 @@
     <link rel="shortcut icon" href="asset/img/resume_icon.png" type="image/x-icon">
     <!-- Icons made by Freepik from flaticon.com -->
     <meta name="description" content="Vous trouverez ici un CV intégré à partir d'une maquette en HTML/CSS">
+    <link rel="stylesheet" href="asset/css/aos.css">
     <link rel="stylesheet" href="asset/css/style.css">
     <title>Jules Giraud</title>
 </head>
 
 <body>
     <div class="wrap">
-        <header>
+        <header data-aos="fade-up">
             <ul>
                 <li>
                     <p>Rue Louis Dubreuil</p>
@@ -41,7 +42,7 @@
         <div class="wrap-global">
             <!-- boite bleu avec un svg, peut-être un before ou after pr le diam et à côté l'image de profil -->
             <div class="global-intro">
-                <div class="intro">
+                <div class="intro" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <p>21 ans, en couple.</p>
                     <p>J'ai toujours été proche de la technologie,
                         notamment des consoles et ordinateurs.Après avoir cherché ce qui pouvait me plaire le plus, j'ai
@@ -50,7 +51,7 @@
                         penser et créer un site est pour moi un atout à mettre au service de clients aujourd'hui.</p>
                 </div>
                 <div>
-                    <img src="asset/img/Profile-square-min.png"loading="lazy" alt="photo de profil de Jules Giraud" >
+                    <img src="asset/img/Profile-square-min.png" loading="lazy" alt="photo de profil de Jules Giraud">
                 </div>
             </div>
 
@@ -67,7 +68,7 @@
                     <p>créativité</p>
                     <img src="asset/img/cv_stylo.svg" alt="logo de stylo">
                     <p>Rédaction</p>
-                    <img src="asset/img/teamwork.png" alt="logo d'esprit d'équipe">
+                    <img src="asset/img/teamwork-min.png" alt="logo d'esprit d'équipe">
                     <p>Esprit d'équipe</p>
 
                 </div>
@@ -118,13 +119,20 @@
                         <li>Réseau</li>
                     </ul>
                     <ul>
-                        <li><img src="asset/img/html.svg" loading="lazy" alt="niveau en html"></li>
-                        <li><img src="asset/img/scss.svg" loading="lazy" alt="niveau en scss"></li>
-                        <li><img src="asset/img/javascript.svg" loading="lazy" alt="niveau en javascript"></li>
-                        <li><img src="asset/img/php.svg" loading="lazy" alt="niveau en PHP"></li>
-                        <li><img src="asset/img/cms.svg" loading="lazy" alt="niveau en CMS"></li>
-                        <li><img src="asset/img/sql.svg" loading="lazy" alt="niveau en SQL et SGBD"></li>
-                        <li><img src="asset/img/reseau.svg" loading="lazy" alt="niveau en Réseau"></li>
+                        <li><img src="asset/img/html.svg" loading="lazy" alt="niveau en html" data-aos="fade-up"
+                                data-aos-duration="2000"></li>
+                        <li><img src="asset/img/scss.svg" loading="lazy" alt="niveau en scss" data-aos="fade-up"
+                                data-aos-duration="2000"></li>
+                        <li><img src="asset/img/javascript.svg" loading="lazy" alt="niveau en javascript"
+                                data-aos="fade-up" data-aos-duration="2000"></li>
+                        <li><img src="asset/img/php.svg" loading="lazy" alt="niveau en PHP" data-aos="fade-up"
+                                data-aos-duration="2000"></li>
+                        <li><img src="asset/img/cms.svg" loading="lazy" alt="niveau en CMS" data-aos="fade-up"
+                                data-aos-duration="2000"></li>
+                        <li><img src="asset/img/sql.svg" loading="lazy" alt="niveau en SQL et SGBD" data-aos="fade-up"
+                                data-aos-duration="2000"></li>
+                        <li><img src="asset/img/reseau.svg" loading="lazy" alt="niveau en Réseau" data-aos="fade-up"
+                                data-aos-duration="2000"></li>
                     </ul>
                 </div>
                 <!-- droit -->
@@ -177,6 +185,8 @@
 
         </div>
     </div>
+    <script src="asset/js/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>

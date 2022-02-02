@@ -391,8 +391,16 @@ header ul li:nth-child(3)::after {
     margin-top: 3%;
 }
 
+.experience img[src$="case.svg"],.experience img[src$="parchemin.svg"] {
+    -webkit-animation: float 6s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
+}
+
 .experience img[alt$="couronne"] {
     min-width: 40%;
+    -webkit-animation: float 6s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
+
 }
 
 .experience .quality img~p {
@@ -552,7 +560,7 @@ footer div:last-child .hobbies {
 
 .grid-hobbies {
     width: 100%;
-    margin:auto 10% auto 5%;
+    margin: auto 10% auto 5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -560,18 +568,21 @@ footer div:last-child .hobbies {
     align-items: center;
 
 }
+
 .grid-hobbies li {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
+
 .grid-hobbies li img {
     max-width: 28%;
     display: block;
     margin: 0 auto 6%;
 }
+
 .grid-hobbies li p {
-    font-family: 'Montserrat',lato,sans-serif;
+    font-family: 'Montserrat', lato, sans-serif;
     font-weight: 300;
 }
 
@@ -581,9 +592,10 @@ footer div:last-child .languages {
     flex-direction: row;
 
 }
+
 .grid-languages {
     width: 60%;
-    margin:auto 10% auto 5%;
+    margin: auto 10% auto 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -594,4 +606,38 @@ footer div:last-child .languages {
 
 footer div:last-child .languages .grid-languages img {
     max-width: 25%;
+}
+
+@-webkit-keyframes float {
+    0% {
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+    }
+
+    50% {
+        -webkit-transform: translatey(-10px);
+        transform: translatey(-10px);
+    }
+
+    100% {
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+    }
+}
+
+@keyframes float {
+    0% {
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+    }
+
+    50% {
+        -webkit-transform: translatey(-10px);
+        transform: translatey(-10px);
+    }
+
+    100% {
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+    }
 }
