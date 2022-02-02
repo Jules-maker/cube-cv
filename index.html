@@ -1,12 +1,192 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="asset/img/resume_icon.png" type="image/x-icon">
+    <!-- Icons made by Freepik from flaticon.com -->
+    <meta name="description" content="Vous trouverez ici un CV intégré à partir d'une maquette en HTML/CSS">
+    <link rel="stylesheet" href="asset/css/aos.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>Jules Giraud</title>
 </head>
+
 <body>
-    
+    <div class="wrap">
+        <header data-aos="fade-up">
+            <ul>
+                <li>
+                    <p>Rue Louis Dubreuil</p>
+                    <p>76000 Rouen</p>
+                    <p>&</p>
+                    <p>Rue Montgallet</p>
+                    <p>75012 Paris</p>
+                </li>
+                <li>
+                    <h1>Jules Giraud</h1>
+                    <p>Développeur front </p>
+                    <!-- <p>En alternance</p> est omis pour le design -->
+                    <!-- <img src="asset/img/game_designer.svg" alt="bannière game designer "> -->
+
+                </li>
+                <li>
+                    <!-- faire border top + outline +after et/ou before pour l'effet bulle de dial -->
+                    <a href="mailto:jules.giraud@outlook.fr">Jules.Giraud@outlook.fr</a>
+                    <a href="jules-giraud.xyz">www.jules-giraud.xyz</a>
+
+                </li>
+            </ul>
+        </header>
+        <div class="wrap-global">
+            <!-- boite bleu avec un svg, peut-être un before ou after pr le diam et à côté l'image de profil -->
+            <div class="global-intro">
+                <div class="intro" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <p>21 ans, en couple.</p>
+                    <p>J'ai toujours été proche de la technologie,
+                        notamment des consoles et ordinateurs.Après avoir cherché ce qui pouvait me plaire le plus, j'ai
+                        été séduit par le web et la création de sites.
+                        Savoir que ce dont je créé impacte la vie des gens est un superbe sentiment. De bout en bout,
+                        penser et créer un site est pour moi un atout à mettre au service de clients aujourd'hui.</p>
+                </div>
+                <div>
+                    <img src="asset/img/Profile-square-min.png" loading="lazy" alt="photo de profil de Jules Giraud">
+                </div>
+            </div>
+
+
+            <!-- 3 sections avec un fin border, et le dernier logo qui dépasse de la boite (no wrap) -->
+            <!--   -->
+            <div class="experience">
+
+                <div class="line-left"></div>
+                <div class="quality">
+                    <div class="line-right"></div>
+                    <img src="asset/img/cv_crown.svg" alt="logo de couronne">
+                    <img src="asset/img/cv_créativité_logo.svg" alt="logo de créativité">
+                    <p>créativité</p>
+                    <img src="asset/img/cv_stylo.svg" alt="logo de stylo">
+                    <p>Rédaction</p>
+                    <img src="asset/img/teamwork-min.png" alt="logo d'esprit d'équipe">
+                    <p>Esprit d'équipe</p>
+
+                </div>
+                <div class="jobs">
+                    <div class="line-right"></div>
+                    <img src="asset/img/cv_case.svg" alt="logo valise">
+                    <div>
+                        <p>1 <span>mois</span> - téléconseiller</p>
+                        <p>Voxens</p>
+                        <p>Mai à Juin 2021</p>
+                    </div>
+                </div>
+                <div class="licence">
+                    <img src="asset/img/cv_parchemin.svg" alt="logo de diplôme">
+                    <div>
+                        <p>Alternance statut étudiant</p>
+                        <p>De octobre 2021 à aujourd'hui</p>
+                        <p>Cesi Rouen</p>
+                    </div>
+                    <div>
+                        <p>Développeur web</p>
+                        <p>2020 à 2021</p>
+                        <p>Nfactory School</p>
+                    </div>
+                    <div>
+                        <p>Baccalauréat S spécialité ISN</p>
+                        <p>Juin 2018</p>
+                        <p>Lycée Pierre Corneille Rouen</p>
+                    </div>
+                    <!-- TODO: div pour école d'ingé -->
+                </div>
+
+            </div>
+            <!-- derniere section -->
+            <footer>
+                <!-- coté gauche -->
+                <div class="left">
+                    <!-- <p en ligne -->
+                    <h2>compétences</h2>
+                    <div class="line-right"></div>
+                    <ul class="skill">
+                        <li>HTML</li>
+                        <li>SCSS</li>
+                        <li>Javascript</li>
+                        <li>PHP</li>
+                        <li>CMS(wordpress)</li>
+                        <li>SQL(SGBD)</li>
+                        <li>Réseau</li>
+                    </ul>
+                    <ul>
+                        <li><img src="asset/img/html.svg" loading="lazy" alt="niveau en html" data-aos="fade-up"
+                                data-aos-duration="2000"></li>
+                        <li><img src="asset/img/scss.svg" loading="lazy" alt="niveau en scss" data-aos="fade-up"
+                                data-aos-duration="2000"></li>
+                        <li><img src="asset/img/javascript.svg" loading="lazy" alt="niveau en javascript"
+                                data-aos="fade-up" data-aos-duration="2000"></li>
+                        <li><img src="asset/img/php.svg" loading="lazy" alt="niveau en PHP" data-aos="fade-up"
+                                data-aos-duration="2000"></li>
+                        <li><img src="asset/img/cms.svg" loading="lazy" alt="niveau en CMS" data-aos="fade-up"
+                                data-aos-duration="2000"></li>
+                        <li><img src="asset/img/sql.svg" loading="lazy" alt="niveau en SQL et SGBD" data-aos="fade-up"
+                                data-aos-duration="2000"></li>
+                        <li><img src="asset/img/reseau.svg" loading="lazy" alt="niveau en Réseau" data-aos="fade-up"
+                                data-aos-duration="2000"></li>
+                    </ul>
+                </div>
+                <!-- droit -->
+                <div>
+                    <div class="hobbies">
+                        <h2>hobbies</h2>
+                        <!-- apprendre grid, ici logoHobbies -->
+                        <ul class="grid-hobbies">
+                            <li>
+                                <img src="asset/img/jeux.svg" loading="lazy" alt="logo de manette">
+                                <p>Jeux vidéos</p>
+                            </li>
+                            <li>
+                                <img src="asset/img/photo.svg" loading="lazy" alt="logo d'appareil photo">
+                                <p>Photos</p>
+                            </li>
+                            <li>
+                                <img src="asset/img/films.svg" loading="lazy" alt="logo de film cinématique">
+                                <p>Films</p>
+                            </li>
+                            <li>
+                                <img src="asset/img/mangas.svg" loading="lazy" alt="logo de livre">
+                                <p>Mangas</p>
+                            </li>
+                            <li>
+                                <img src="asset/img/rap.svg" loading="lazy" alt="logo de note de musique">
+                                <p>Rap</p>
+                            </li>
+                            <li>
+                                <img src="asset/img/botanique.svg" loading="lazy" alt="logo de feuille">
+                                <p>Botanique</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="languages">
+                        <h2>langues</h2>
+                        <!-- grid  -->
+                        <ul class="grid-languages">
+                            <li><img src="asset/img/cv_french_flag.svg" alt=""></li>
+                            <li><img src="asset/img/cv_english_flag.svg" alt=""></li>
+                            <li><img src="asset/img/cv_spanish_flag.svg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
+
+
+
+
+        </div>
+    </div>
+    <script src="asset/js/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
+
 </html>

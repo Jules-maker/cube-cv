@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="60" viewBox="0 0 300 60">
+  <g id="Groupe_1" data-name="Groupe 1" transform="translate(-595 -577)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="244.551" height="27" transform="translate(623 610)" fill="#fdf8e2"/>
+    <g id="Groupe_248" data-name="Groupe 248" transform="translate(595 577)">
+      <g id="Groupe_95" data-name="Groupe 95">
+        <path id="Tracé_148" data-name="Tracé 148" d="M1285,115.331V104.1h-30.943v40.177H1285V133.045h-8.445V115.331Z" transform="translate(-985 -98.204)" fill="#c21001"/>
+        <path id="Tracé_149" data-name="Tracé 149" d="M992.917,104.1v11.232h8.445v17.714h-8.445v11.232h30.943V104.1Z" transform="translate(-992.917 -98.204)" fill="#c21001"/>
+        <rect id="Rectangle_12" data-name="Rectangle 12" width="6.565" height="40.177" transform="translate(275.619 46.073) rotate(180)" fill="#940a05"/>
+        <rect id="Rectangle_13" data-name="Rectangle 13" width="6.565" height="40.177" transform="translate(30.742 46.073) rotate(180)" fill="#940a05"/>
+        <path id="Tracé_150" data-name="Tracé 150" d="M1023.66,144.277v-10.83h15.91Z" transform="translate(-992.917 -98.204)" fill="#6b0605"/>
+        <path id="Tracé_151" data-name="Tracé 151" d="M1254.06,144.277l-15.91-10.83h15.91Z" transform="translate(-985 -98.204)" fill="#6b0605"/>
+        <rect id="Rectangle_14" data-name="Rectangle 14" width="238.313" height="35.243" transform="translate(30.742)" fill="#ed4327"/>
+        <rect id="Rectangle_15" data-name="Rectangle 15" width="238.313" height="5.896" transform="translate(30.742 29.347)" fill="#d4311c"/>
+        <rect id="Rectangle_16" data-name="Rectangle 16" width="238.313" height="5.896" transform="translate(30.742)" fill="#ed5c3a"/>
+      </g>
+    </g>
+  </g>
+</svg>
