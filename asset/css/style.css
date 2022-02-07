@@ -371,6 +371,7 @@ header ul li:nth-child(3)::after {
     align-items: center;
     gap: 4%;
     position: relative;
+    text-align: center;
 }
 
 .experience img:not([alt="logo d'esprit d'équipe"]) {
@@ -511,13 +512,6 @@ footer div.left {
     position: relative;
 }
 
-footer div.left ul {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 1%;
-    margin-left: 1%;
-}
 
 
 footer div.left ul.skill li {
@@ -525,7 +519,15 @@ footer div.left ul.skill li {
     margin: 0% 10% 11% 10%;
 }
 
-footer div.left ul li {
+footer div.left ul.skill-level {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    margin-left: 1%;
+}
+
+footer div.left ul.skill-level li {
     margin-bottom: 10%;
 
 }
@@ -665,30 +667,89 @@ footer div:last-child .languages .grid-languages img {
         text-overflow: clip;
     }
 
+    header ul li:nth-child(3)::before {
+        content: '';
+        position: absolute;
+        left: 137px;
+        top: 54px;
+        width: 28px;
+        min-height: 28px;
+        background-color: var(--blue);
+        -webkit-box-shadow: inset -8px -8px 0px 0px var(--outline-blue);
+        -moz-box-shadow: inset -8px -8px 0px 0px var(--outline-blue);
+        box-shadow: inset -8px -8px 0px 0px var(--outline-blue);
+    }
+
+    header ul li:nth-child(3)::after {
+        content: '';
+        position: absolute;
+        left: 158px;
+        top: 75px;
+        width: 14px;
+        min-height: 14px;
+        background-color: var(--blue);
+        -webkit-box-shadow: inset -3px -3px 0px 0px var(--outline-blue);
+        -moz-box-shadow: inset -3px -3px 0px 0px var(--outline-blue);
+        box-shadow: inset -3px -3px 0px 0px var(--outline-blue);
+
+    }
+
     .wrap-global .intro {
         display: flex;
         background-color: var(--blue);
         height: 80%;
         width: 60%;
         margin: 20px 0 0 50px;
-        padding: 10px 10px 10px 33px;
-        /* left, bottom, corner */
-        -webkit-box-shadow: -6px 0px 0px 0px rgba(46, 101, 150, 1), 0px 6px 0px 0px rgba(46, 101, 150, 1), -6px 6px 0px 0px rgba(46, 101, 150, 1);
-        -moz-box-shadow: -6px 0px 0px 0px rgba(46, 101, 150, 1), 0px 6px 0px 0px rgba(46, 101, 150, 1), -6px 6px 0px 0px rgba(46, 101, 150, 1);
-        box-shadow: -6px 0px 0px 0px rgba(46, 101, 150, 1), 0px 6px 0px 0px rgba(46, 101, 150, 1), -6px 6px 0px 0px rgba(46, 101, 150, 1);
-        position: relative;
+        padding: 2px 5px 0px 5px;
     }
 
     .wrap-global .intro p {
-        display: contents;
-        font-family: 'Montserrat';
         font-weight: 300;
-        font-size: 0.8 em;
-        line-height: 15px;
-        color: var(--red);
-        /* retour chariot sans utiliser br */
-        white-space: pre-line;
-        
+        font-size: 0.8em;
+        line-height: 18px;
+
     }
+
+    .wrap-global img[src="asset/img/Profile-square-min.png"] {
+        height: 110px;
+        width: 110px;
+    }
+
+    .experience {
+        height: 425px;
+    }
+
+    /* .experience .quality {
+        
+    } */
+
+    .experience .licence {
+        padding: 0 10px 10px;
+    }
+
+    footer div.left ul.skill {
+        margin-right: 10%;
+    }
+
+    footer div.left ul.skill li:first-child {
+        margin-top: 35%;
+    }
+
+    footer div.left ul.skill li {
+        font-family: 'RetroGaming', lato, sans-serif;
+        font-size: 0.8em;
+        margin: 0% 25% 15% 5%;
+    }
+
+
+    footer div.left ul.skill-level {
+        width: 36%;
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+        margin: 13% 0 1%;
+    }
+}
+
 
 }
