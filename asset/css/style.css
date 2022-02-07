@@ -150,6 +150,7 @@ body {
 }
 
 /* header */
+/*//////////////////////////////////////////////////////////////////////////*/
 header {
     background-color: var(--white)
 }
@@ -206,19 +207,7 @@ header ul li:nth-child(2) p {
 
 }
 
-/* header ul li:nth-child(2) p::after {
-    content: '';
-    position: absolute;
-    top: 176px;
-    
-    right: 560px;
-    
-    background-color: var(--cv-background);
-    width: 250px;
-    height: 27px;
-    z-index: 0;
-  
-} */
+
 
 header ul li:nth-child(3) {
     display: flex;
@@ -277,11 +266,12 @@ header ul li:nth-child(3)::after {
 /* body resume */
 .wrap-global {
     width: 100%;
-    height: fit-content;
+    height: 100%;
 
 }
 
 /* introduce */
+/* //////////////////////////////////////////////////////////////////// */
 .global-intro {
     width: 100%;
     height: fit-content;
@@ -293,7 +283,7 @@ header ul li:nth-child(3)::after {
 .wrap-global .intro {
     display: flex;
     background-color: var(--blue);
-    height: 26vh;
+    height: 26%;
     width: 66%;
     margin: 50px 0 0 50px;
     padding: 10px 10px 10px 33px;
@@ -330,9 +320,7 @@ header ul li:nth-child(3)::after {
     background-repeat: no-repeat;
 }
 
-/* .wrap .intro div {
 
-} */
 .wrap-global .intro p {
     display: contents;
     font-family: 'Montserrat';
@@ -353,7 +341,7 @@ header ul li:nth-child(3)::after {
 }
 
 
-/*/////////////   Experience  ////////////////*/
+/*////////////////////////////   Experience  ///////////////////////////////*/
 .experience {
     margin-top: 50px;
     width: 100%;
@@ -391,7 +379,7 @@ header ul li:nth-child(3)::after {
     margin-top: 3%;
 }
 
-.experience img[src$="case.svg"],.experience img[src$="parchemin.svg"] {
+.experience img[src$="case.svg"], .experience img[src$="parchemin.svg"] {
     -webkit-animation: float 6s ease-in-out infinite;
     animation: float 6s ease-in-out infinite;
 }
@@ -498,6 +486,7 @@ img[alt="logo d'esprit d'équipe"]+p {
 }
 
 /* profil */
+/* //////////////////////////////////////////////////////////////////////////////////// */
 footer {
     width: 100%;
     margin: 0 auto 5%;
@@ -530,7 +519,7 @@ footer div.left ul {
     margin-left: 1%;
 }
 
-/* TODO: style svg */
+
 footer div.left ul.skill li {
     font-family: 'RetroGaming', lato, sans-serif;
     margin: 0% 10% 11% 10%;
@@ -640,4 +629,66 @@ footer div:last-child .languages .grid-languages img {
         -webkit-transform: translatey(0px);
         transform: translatey(0px);
     }
+}
+
+
+/* media print et media queries */
+@media print {
+    @page {
+        margin: 0;
+    }
+
+    body {
+        -webkit-print-color-adjust: exact;
+        margin: 0;
+        height: unset;
+    }
+
+    .wrap {
+        margin: 0;
+    }
+
+    .wrap-global .intro {
+
+        height: 5cm;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .global-intro {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgba(0, 255, 255, 0.336);
+        text-overflow: clip;
+    }
+
+    .wrap-global .intro {
+        display: flex;
+        background-color: var(--blue);
+        height: 80%;
+        width: 60%;
+        margin: 20px 0 0 50px;
+        padding: 10px 10px 10px 33px;
+        /* left, bottom, corner */
+        -webkit-box-shadow: -6px 0px 0px 0px rgba(46, 101, 150, 1), 0px 6px 0px 0px rgba(46, 101, 150, 1), -6px 6px 0px 0px rgba(46, 101, 150, 1);
+        -moz-box-shadow: -6px 0px 0px 0px rgba(46, 101, 150, 1), 0px 6px 0px 0px rgba(46, 101, 150, 1), -6px 6px 0px 0px rgba(46, 101, 150, 1);
+        box-shadow: -6px 0px 0px 0px rgba(46, 101, 150, 1), 0px 6px 0px 0px rgba(46, 101, 150, 1), -6px 6px 0px 0px rgba(46, 101, 150, 1);
+        position: relative;
+    }
+
+    .wrap-global .intro p {
+        display: contents;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        font-size: 0.8 em;
+        line-height: 15px;
+        color: var(--red);
+        /* retour chariot sans utiliser br */
+        white-space: pre-line;
+        
+    }
+
 }
